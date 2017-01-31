@@ -5,42 +5,60 @@ document.querySelector("#inject-html button").addEventListener('click',function(
   answerBoxEl.innerHTML = "<h2>Here is some text for you!!</h2>"
 })
 
+
+
 document.querySelector("#double button").addEventListener('click',function(){
   // TASK #2
   var answerPTagWithValue = document.querySelector('#compoundInvestment')
   // you do the rest
 
-  console.log(answerPTagWithValue)
+  var valueAsNum = parseInt( answerPTagWithValue )
+  var doubleNum = valueAsNum * 2
+
+
+  // console.log(answerPTagWithValue)
 
 })
+
 
 
 document.querySelector("#color-circle button").addEventListener('click',function(){
   // TASK #3
 
-var circleColor = document.querySelector('#circle-bw')
-var circleColorStyles = window.getComputedStyle(circleColor)
+  var circleColor = document.querySelector('#circle-bw');
+  // console.log(circleColor);
+  circleColor.style.backgroundColor = '#000000';
 
-console.log(circleColorStyles)
+  // circleColor.style.backgroundColor = '#fff';
+
 
 })
+
+
 
 document.querySelector("#blow-up button").addEventListener('click',function(){
   // TASK #4}
 })
+
+
 
 document.querySelector("#remove button").addEventListener('click',function(){
   // TASK #5
 })
 
 
+
 document.querySelector("#reverse-squares button").addEventListener('click',function(){
   // TASK #6
 })
 
+
+
 document.querySelector("#pig-latin button").addEventListener('click',function(){
   // TASK #7
 })
+
+
 
 document.querySelector("#cycle-image button").addEventListener('click',function(){
    //TASK #8
